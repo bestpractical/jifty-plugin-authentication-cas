@@ -5,6 +5,8 @@ package Jifty::Plugin::Authentication::CAS;
 use base qw/Jifty::Plugin/;
 use Authen::CAS::Client;
 
+our $VERSION = '0.01';
+
 =head1 NAME
 
 Jifty::Plugin::Authentication::CAS - JA-SIG CAS authentication plugin
