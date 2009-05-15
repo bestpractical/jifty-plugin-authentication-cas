@@ -4,6 +4,9 @@ use warnings;
 package Jifty::Plugin::Authentication::CAS::Dispatcher;
 use Jifty::Dispatcher -base;
 
+# whitelist safe actions to avoid cross-site scripting
+before '*' => run { Jifty->api->allow('CASLogout') };
+
 # Put any plugin-specific dispatcher rules here.
 
 before '/caslogin' => run {
