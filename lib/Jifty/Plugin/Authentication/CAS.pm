@@ -9,7 +9,7 @@ our $VERSION = '0.9';
 
 =head1 NAME
 
-Jifty::Plugin::Authentication::CAS - JA-SIG CAS authentication plugin
+Jifty::Plugin::Authentication::CAS - JA-SIG CAS authentication plugin for Jifty
 
 =head1 DESCRIPTION
 
@@ -66,18 +66,19 @@ sub domain {
     return $domain;
 };
 
-=head1 TODO
-
-add a ldap config to get more attributes
-
 =head1 SEE ALSO
 
 L<Jifty::Manual::AccessControl>, L<Jifty::Plugin::User>, L<Authen::CAS::Client>
 
+=head1 AUTHOR
+
+Yves Agostini, <yvesago@cpan.org>
+
 =head1 LICENSE
 
-Jifty is Copyright 2005-2007 Best Practical Solutions, LLC.
-Jifty is distributed under the same terms as Perl itself.
+Copyright 2007-2009 Yves Agostini. All Rights Reserved.
+
+This program is free software and may be modified and distributed under the same terms as Perl itself.
 
 =cut
 

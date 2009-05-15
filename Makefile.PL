@@ -1,8 +1,9 @@
-use inc::Module::Install 0.46;
+use inc::Module::Install;
 name('Jifty-Plugin-Authentication-CAS');
-version_from('lib/Jifty/Plugin/Authentication/CAS.pm');
+all_from('lib/Jifty/Plugin/Authentication/CAS.pm');
 
 requires('Jifty');
+requires('Authen::CAS::Client');
 
 auto_install();
 tests(qw( t/*/t/*.t ));
